@@ -34,10 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
   var wt = TextEditingController();
   var ft = TextEditingController();
   var inc = TextEditingController();
-  var result="";
+  var result = "";
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextField(
                   controller: wt,
                   decoration: InputDecoration(
-                      label: Text("Enter your Weightt"),
+                      label: Text("Enter your Weight"),
                       prefixIcon: Icon(Icons.line_weight)),
                   keyboardType: TextInputType.number,
                 ),
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextField(
                   controller: ft,
                   decoration: InputDecoration(
-                      label: Text("Enter your Height"),
+                      label: Text("Enter your Height(in feet)"),
                       prefixIcon: Icon(Icons.height)),
                   keyboardType: TextInputType.number,
                 ),
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextField(
                   controller: inc,
                   decoration: InputDecoration(
-                      label: Text("Enter your Height"),
+                      label: Text("Enter your Height(in inches)"),
                       prefixIcon: Icon(Icons.height)),
                   keyboardType: TextInputType.number,
                 ),
@@ -107,7 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       }
                     },
                     child: Text("Calculate")),
-
                 Text(
                   result,
                   style: TextStyle(fontSize: 19),
